@@ -1,0 +1,96 @@
+*********************
+if
+*********************
+
+if name == 'Alice':
+    print('Hi, Alice.')
+
+*********************
+else
+*********************
+
+if name == 'Alice':
+    print('Hi, Alice.')
+else:
+    print('Hello, stranger.')
+
+*********************
+elif (elseif)
+*********************
+
+if name == 'Alice':
+    print('Hi, Alice.')
+elif age < 12:
+    print('You are not Alice, kiddo.')
+
+*********************
+while
+*********************
+
+spam = 0
+while spam < 5:
+    print('Hello, world.')
+    spam = spam + 1
+
+*********************
+break
+*********************
+
+while True:
+  print('Please type your name.')
+  name = input()
+  if name == 'your name': 
+     break
+print('Thank you!')
+
+*********************
+continue
+*********************
+
+while True:
+    print('Who are you?')
+    name = input()
+    if name != 'Joe':
+        continue
+    print('Hello, Joe. What is the password? (It is a fish.)')
+    password = input()
+    if password == 'swordfish':
+        break
+print('Access granted.')  
+
+*********************
+Truthy and Falsey 
+*********************
+
+Conditions will consider some values in other data types equivalent 
+to True and False. When used in conditions, 0, 0.0, and '' 
+(the empty string) are considered False, while all other values are 
+considered True. For example, look at the following program:
+
+name = ''
+while not name:
+    print('Enter your name:')
+    name = input()
+print('How many guests will you have?')
+numOfGuests = int(input())
+  if numOfGuests:
+     print('Be sure to have enough room for all your guests.')
+print('Done')
+
+If the user enters a blank string 
+for name, then the while statement’s condition will be True ➊, and 
+the program continues to ask for a name. If the value for numOfGuests 
+is not 0 ➋, then the condition is considered to be True, and the 
+program will print a reminder for the user ➌.
+
+You could have entered not name != '' instead of not name, and 
+numOfGuests != 0 instead of numOfGuests, but using the truthy and 
+falsey values can make your code easier to read.
+
+*********************
+for loops and range()
+*********************
+
+print('My name is')
+for i in range(5):
+    print('Jimmy Five Times (' + str(i) + ')')
