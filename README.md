@@ -1,3 +1,3 @@
-what the fuck why does this one work and the other doesn't
+these are the programs i made following along with "Automate the Boring Stuff with Python" by Al Sweigart
 
-edit: oh it fuckin worked THIS time after changing literally nothing
+You might have guessed that though
