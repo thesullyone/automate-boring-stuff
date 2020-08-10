@@ -1,0 +1,25 @@
+Using the random.choice() and random.shuffle() Functions with Lists
+
+The random module has a couple functions that accept lists for arguments. The random.choice() function will return a randomly selected item from the list. Enter the following into the interactive shell:
+
+>>> import random
+>>> pets = ['Dog', 'Cat', 'Moose']
+>>> random.choice(pets)
+'Dog'
+>>> random.choice(pets)
+'Cat'
+>>> random.choice(pets)
+'Cat'
+
+You can consider random.choice(someList) to be a shorter form of someList[random.randint(0, len(someList) – 1].
+
+The random.shuffle() function will reorder the items in a list. This function modifies the list in place, rather than returning a new list. Enter the following into the interactive shell:
+
+>>> import random
+>>> people = ['Alice', 'Bob', 'Carol', 'David']
+>>> random.shuffle(people)
+>>> people
+['Carol', 'David', 'Alice', 'Bob']
+>>> random.shuffle(people)
+>>> people
+['Alice', 'David', 'Bob', 'Carol']

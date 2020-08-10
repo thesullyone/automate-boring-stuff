@@ -8,13 +8,13 @@ try:
         time.sleep(0.01) # 1/10 sec pause
         if indentIncrease:
             # increase number of spaces
-            indent = indent + 1
+            indent += indent
             if indent == 10:
                 # change indent direction
                 indentIncrease = False
         else:
             # Decrease the number of spaces
-            indent = indent - 1
+            indent -= indent
             if indent == 0:
                 # change direction
                 indentIncrease = True

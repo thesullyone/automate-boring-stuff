@@ -1,0 +1,12 @@
+Third, sort() uses “ASCIIbetical order” rather than actual alphabetical order for sorting strings. This means uppercase letters come before lowercase letters. Therefore, the lowercase a is sorted so that it comes after the uppercase Z. For an example, enter the following into the interactive shell:
+
+>>> spam = ['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats']
+>>> spam.sort()
+>>> spam
+['Alice', 'Bob', 'Carol', 'ants', 'badgers', 'cats']
+
+If you need to sort the values in regular alphabetical order, pass str.lower for the key keyword argument in the sort() method call.
+
+>>> spam = ['a', 'z', 'A', 'Z']
+>>> spam.sort(key=str.lower)
+>>> spam
