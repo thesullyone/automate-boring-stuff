@@ -10,9 +10,7 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
-for y in range(1 , 7):
-    for x in range(1 , 10):
-        print(grid[x - 1][y - 1], end = '')
+for y in range(6):
+    for x in range(9):
+        print(grid[x][y], end = '')
     print('')
-
-
